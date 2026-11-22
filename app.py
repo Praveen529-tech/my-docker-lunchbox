@@ -7,6 +7,7 @@ def get_greeting():
     else:
         return "Failed to get greeting."
 
+get_greeting()
 
 if __name__ == "__main__":
     print(get_greeting())
