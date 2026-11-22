@@ -1,4 +1,7 @@
-from app import get_greeting
+from app import check_github_status, get_greeting
+
+def test_github_status():
+    assert check_github_status() == 200
 
 def test_get_greeting():
-    assert get_greeting() == "Hello! I am running inside my own Docker container!"
+    assert "200" in get_greeting()
