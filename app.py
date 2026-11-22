@@ -1,2 +1,7 @@
-print("Hello! I am running inside my own Docker container!")
-print("Build #2: Triggered automatically by pushing to feature-branch!")
+import requests
+
+def get_greeting():
+    return "Hello! I am running inside my own Docker container!"
+
+if __name__ == "__main__":
+    print(get_greeting())
