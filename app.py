@@ -1,4 +1,4 @@
-import requests
+import requests,math
 
 def check_github_status():
     response = requests.get("https://api.github.com", timeout=5)
