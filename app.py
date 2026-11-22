@@ -1,4 +1,4 @@
-import requests,math
+import requests
 
 def get_greeting():
     response = requests.get("https://api.github.com")
